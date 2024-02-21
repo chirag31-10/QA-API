@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
+var ATLASSIAN_API_TOKEN = ATATT3xFfGF0eaiQ6NPpLXoUd-R8x92QhON0AWMxWRr380xiA7Gb2IPfgzISo7G2MRopTtFpsU7SjeJSQzlnXqz27LAK6a7IG3gAMirdH8EoyECmxdXrNqfddDyhCkrL6qHqLqq-1_fe0Un3pvVZvy5r2zPffO4HbX04Ifr0KSpDywyv-LgTI9M=280C9DDF
+
 mongoose.connect("mongodb://localhost:27017/wikiDB", {useNewUrlParser: true});
 
 const articleSchema = {
